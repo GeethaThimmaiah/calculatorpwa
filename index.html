@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="./assets/icon-192.png" />
+    <link rel="manifest" href="./manifest.json" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("./sw.js");
+        });
+      }
+    </script> 
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="calculator_textarea">
+          <textarea
+            cols="40"
+            rows="7"
+            id="calculator_input_Number_textarea"
+          ></textarea>
+          <input type="text" id="calculator_input_Number" />
+        </div>
+
+        <div class="calculator_button">
+          <div class="calculator_button_left3">
+            <div class="calculator_button_left3_Top">
+              <div class="calculator_button_Top" id="Calculator_input_AC">
+                AC
+              </div>
+              <div class="calculator_button_Top" onclick="inverse()">
+                +/-
+              </div>
+              <div class="calculator_button_Top" onclick="display('%')">%</div>
+            </div>
+
+            <div class="calculator_button_left_Number">
+              <div class="calculator_button_Number" onclick="display('9')">
+                9
+              </div>
+              <div class="calculator_button_Number" onclick="display('8')">
+                8
+              </div>
+              <div class="calculator_button_Number" onclick="display('7')">
+                7
+              </div>
+
+              <div class="calculator_button_Number" onclick="display('6')">
+                6
+              </div>
+              <div class="calculator_button_Number" onclick="display('5')">
+                5
+              </div>
+              <div class="calculator_button_Number" onclick="display('4')">
+                4
+              </div>
+
+              <div class="calculator_button_Number" onclick="display('3')">
+                3
+              </div>
+              <div class="calculator_button_Number" onclick="display('2')">
+                2
+              </div>
+              <div class="calculator_button_Number" onclick="display('1')">
+                1
+              </div>
+            </div>
+
+            <div class="calculator_button_left3_bottom">
+              <div
+                class="calculator_button_bottom"
+                id="calculator_button_bottom_zero"
+                onclick="display('0')"
+              >
+                0
+              </div>
+              <div class="calculator_button_bottom" onclick="display('.')">
+                .
+              </div>
+            </div>
+          </div>
+          <div class="calculator_button_Right">
+            <div class="calculator_button_Orange" onclick="display('/')">÷</div>
+            <div class="calculator_button_Orange" onclick="display('*')">×</div>
+            <div class="calculator_button_Orange" onclick="display('-')">-</div>
+            <div class="calculator_button_Orange" onclick="display('+')">+</div>
+            <div class="calculator_button_Orange" onclick="displaySolve()">
+              =
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

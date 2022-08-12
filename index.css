@@ -1,0 +1,139 @@
+.calculator_heading{
+    font-family: 'Times New Roman', Times, serif;
+text-align: center;
+color: dimgrey;
+bottom: 20%;
+font-size: 30px;
+text-decoration: underline;
+text-shadow: 0.5px 3px 10px rgb(234, 139, 139);
+}
+
+.container{
+     cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: transparent;
+    background-size:cover;
+}
+
+
+.calculator{
+    background-color:#000;
+    border-radius:10px;
+    padding:5px;
+    box-shadow: -8px -12px 14px rgba(236, 211, 211, 0.5),
+    10px 10px 15px rgba(32, 31, 31, 0.5);
+}
+
+.calculator_textarea{
+    width: 288px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+#calculator_input_Number_textarea{
+    width: 275px;
+    height:100%;
+    outline:none;
+    background-color:#000;
+    border:none;
+    color:#fff;
+    font-size:20px;
+    overflow-y:hidden;
+    text-align: right;
+    resize:none;
+    display:flex;
+    flex-direction: row-reverse;
+    padding:30px 0px 0px 0px ;
+    color:#dbd8d3;
+
+}
+#calculator_input_Number{
+    width: 275px;
+    height: 100px;
+    outline:none;
+    background-color:#000;
+    color:#fff;
+    border:none;
+    font-size: 40px;
+    overflow-y: hidden;
+    text-align: right;
+    resize: none;
+}
+
+.calculator_button{
+    display: flex;
+    flex-direction:row;
+}
+
+.calculator_button_left3_Top{
+    display: flex;
+    flex-direction: row;
+}
+
+.calculator_button_Top,
+.calculator_button_Number,
+.calculator_button_bottom,
+.calculator_button_Orange{
+    width: 60px;
+    height: 60px;
+    border-radius:60px;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    justify-content: center;
+    font-size: 25px;
+    margin:5px;
+    
+
+}
+
+
+
+.calculator_button_Top{
+background-color: rgb(145,145,145);
+    
+}
+.calculator_button_Number{
+    background-color: rgb(60, 59, 59);
+}
+.calculator_button_bottom{
+    background-color: rgb(60, 59, 59);;
+
+}
+.calculator_button_Orange{
+    background-color:orange;
+    color:#fff;
+    font-size: 30px;
+}
+
+
+
+
+.calculator_button_left_Number{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 218px;
+    color:white;
+}
+.calculator_button_left3_bottom{
+    display: flex;
+    flex-direction: row;
+    color:white;
+}
+#calculator_button_bottom_zero{
+    width: 130px;
+    align-items: left;
+    text-align: left;
+}
+.calculator_button_Right{
+    display: flex;
+    flex-direction: column;
+}
